@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "aJsZiSlDX8puDKKCErQcferD8BCRoUjY63MOGIN4N7A=",
+  "Source": "ServerCRUDAPI",
+  "BasePath": "_content/ServerCRUDAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
