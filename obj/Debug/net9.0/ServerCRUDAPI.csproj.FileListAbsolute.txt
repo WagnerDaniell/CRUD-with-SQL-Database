@@ -152,3 +152,6 @@ C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\obj\Debug\net9.0\refint\ServerCRUDA
 C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\obj\Debug\net9.0\ServerCRUDAPI.pdb
 C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\obj\Debug\net9.0\ServerCRUDAPI.genruntimeconfig.cache
 C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\obj\Debug\net9.0\ref\ServerCRUDAPI.dll
+C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\obj\Debug\net9.0\ServerCRUDAPI.sourcelink.json
+C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\bin\Debug\net9.0\Npgsql.dll
+C:\Users\wagne\Desktop\AppCRUD\ServerCRUDAPI\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

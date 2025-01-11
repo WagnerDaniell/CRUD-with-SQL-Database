@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace ServerCRUDAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class criacaoDB : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,12 +15,12 @@ namespace ServerCRUDAPI.Migrations
                 name: "Pessoas",
                 columns: table => new
                 {
-                    PessoaId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Idade = table.Column<int>(type: "int", nullable: false),
-                    Profissao = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    PessoaId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Nome = table.Column<string>(type: "text", nullable: false),
+                    Sobrenome = table.Column<string>(type: "text", nullable: false),
+                    Idade = table.Column<int>(type: "integer", nullable: false),
+                    Profissao = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

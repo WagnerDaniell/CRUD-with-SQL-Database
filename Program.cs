@@ -5,7 +5,7 @@ using ServerCRUDAPI.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<Contexto>(opcoes =>
-    opcoes.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoDB"))
+    opcoes.UseNpgsql(builder.Configuration.GetConnectionString("ConexaoDB"))
 );
 
 // Adiciona o serviço de CORS

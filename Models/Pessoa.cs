@@ -1,12 +1,23 @@
-namespace ServerCRUDAPI.Models{
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+namespace ServerCRUDAPI.Models
+{
     public class Pessoa
     {
-        public int PessoaId {get ; set;}
-        public required string Nome {get ; set;}
-        public required string Sobrenome {get ; set;}
-        public required int Idade {get ; set;}
-        public required string Profissao {get ; set;}
+        [Key]
+        public int PessoaId { get; set; }
+
+        [Required, Column(TypeName = "VARCHAR(100)")]
+        public string Nome { get; set; }
+
+        [Required, Column(TypeName = "VARCHAR(100)")]
+        public string Sobrenome { get; set; }
+
+        [Required]
+        public int Idade { get; set; }
+
+        [Required, Column(TypeName = "VARCHAR(100)")]
+        public string Profissao { get; set; }
     }
 }
-
